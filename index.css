@@ -30,8 +30,7 @@ img.cart {
 }
 nav {
     flex: 1;
-    padding-left: 60px;
-   
+    padding-left: 60px;  
 }
 nav ul li {
     display: inline-block;
@@ -41,51 +40,87 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #333;
-    font-size: 30px;
+    font-size: 20px;
+    transition: 0.5s;
+}
+nav ul li a:hover {
+    color: #ff7aeb;
 }
 .content h1 {
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 100;
-    margin-top: 24px;
-    margin-bottom: 15px;
-    color: #232d60;
+    margin-top: 70px;
+    margin-bottom: 17px;
+    color: #263377;
+    transition: 0.5s;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.content h1:hover {
+    transform: scale(1.05); 
+    color: #ff7aeb;
+    cursor: pointer;
+    letter-spacing: 2px;
 }
 .content p {
-    font-size: 20px;
+    font-size: 15px;
     color: #6a776a;
+    transition: 0.5s;
+    font-style: italic;
+    margin-left: 50px;
+}
+.content p:hover {
+    transform: scale(1.02);
+    letter-spacing: 0.25px;
+    cursor: pointer;
+    color: #fc86d1;
 }
 .content{
-    margin-left: 15%;
+    margin-left: 10%;
     margin-top: 10%;
 }
 .content .btn {
     display: inline-block;
     background: linear-gradient(45deg, #87adfe, #ff77cd);
     border-radius: 6px;
-    padding: 10px 20px;
+    padding: 15px 30px;
     box-sizing: border-box;
     text-decoration: none;
-    color: #fff;
+    color: #fef0f0;
     box-shadow: 3px 8px 22px rgba(94, 28, 68, 0.15);
     transition: 0.5s;
+    font-size: 20px;
+    margin-left: 7%;
 }
 .content .btn:hover {
     transform: scale(1.2);
+    background: linear-gradient(50deg, #a3c0fe, #fb93d5);
+    padding: 18px 35px;
+    color: #fff;
 }
 .arrow-icons {
     display: flex;
-    margin-top: 40px;
+    margin-top: 80px;
+    margin-left: 130px;
 }
 .arrow-icons img {
     width: 40px;
     height: 40px;
     margin-right: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.arrow-icons img:hover{
+    transform: scale(1.2);  
 }
 img.girl {
     position: absolute;
     height: 90%;
     bottom: 0px;
-    right: 160px;
+    right: 120px;
+    transition: 0.5s;
+}
+img.girl:hover {
+    transform: scale(1.1);
 }
 .social_links {
     transform: rotate(-90deg);
@@ -99,4 +134,7 @@ img.girl {
     padding-left: 20px;
     font-size: 20px;
     font-weight: 200;
+}
+.social_links a:hover{
+    color: #506bfe;
 }
